@@ -676,16 +676,17 @@
           <p class="section__description">Fill out the form below and we&#39;ll get back to you promptly.</p>
         </div>
       </div>
-      <form class="quote-form">
+      <form class="quote-form" id="contactForm" action="https://formsubmit.co/info@imeconnect.ca" method="POST">
+        <input type="hidden" name="_subject" value="New Contact Form Submission - IME Connect">
         <div class="form-row">
-          <input type="text" placeholder="Full name" class="form-input" required>
-          <input type="text" placeholder="Postal Code" class="form-input" required>
+          <input type="text" name="fullName" placeholder="Full name" class="form-input" required>
+          <input type="text" name="postalCode" placeholder="Postal Code" class="form-input" required>
         </div>
         <div class="form-row">
-          <input type="email" placeholder="Email address" class="form-input" required>
-          <input type="tel" placeholder="Phone number" class="form-input" required>
+          <input type="email" name="email" placeholder="Email address" class="form-input" required>
+          <input type="tel" name="phone" placeholder="Phone number" class="form-input" required>
         </div>
-        <textarea placeholder="Tell us about your needs or any questions you have" class="form-input form-textarea" required></textarea>
+        <textarea name="message" placeholder="Tell us about your needs or any questions you have" class="form-input form-textarea" required></textarea>
         <button type="submit" class="btn btn--primary btn--full">Send Message</button>
       </form>
       <div class="footer__newsletter" id="subscribe">
